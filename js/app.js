@@ -1,10 +1,10 @@
 var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 
     function preload() {
-        game.load.image('sky', './assets/day background.png');
-        game.load.image('ground', './assets/platform.png');
-        game.load.image('star', './assets/cashen.png');
-        game.load.spritesheet('dude', './assets/dir.png', 52.5, 65.25);
+        game.load.image('sky', 'https://hexedhorizon.github.io/my-game/assets/day background.png');
+        game.load.image('ground', 'https://hexedhorizon.github.io/my-game/assets/platform.png');
+        game.load.image('star', 'https://hexedhorizon.github.io/my-game/assets/cashen.png');
+        game.load.spritesheet('dude', 'https://hexedhorizon.github.io/my-game/assets/dir.png', 52.5, 65.25);
     }
 
     var player;
