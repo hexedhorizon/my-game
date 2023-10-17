@@ -90,7 +90,7 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         }
 
         //  The score
-        cashText = game.add.text(16,16 , 'Cash: 0', { fontSize: '32px', fill: '#000' });
+        cashText = game.add.text(-15,0 , 'Cash: 0', { margin: 'auto', fontSize: '32px', fill: '#000' });
 
         //  Our controls.
         cursors = game.input.keyboard.createCursorKeys();
@@ -155,16 +155,16 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         if(count===10){
             //spree text
              if(cash===100){
-                spree = game.add.text(200, 80, 'Pwede naka mag kaon ug siomai sa KABSAT', { fontSize: '32px', fill: '#000' });
+                spree = game.add.text(0, 80, 'Pwede naka mag kaon ug siomai sa KABSAT', { fontSize: '32px', fill: '#000' });
             }else if(cash===500){
                 spree.alpha = 0.0;
-                spree = game.add.text(150, 60, 'Pwede naka mag unli siomai sa balay', { fontSize: '32px', fill: '#000' });
+                spree = game.add.text(0, 60, 'Pwede naka mag unli siomai sa balay', { fontSize: '32px', fill: '#000' });
             }else if (cash===1000){
                 spree.alpha = 0.0;
-                spree = game.add.text(150, 60, 'Naa nakay pang register para sa Mt. Dulang-Dulang', { fontSize: '32px', fill: '#000' });
+                spree = game.add.text(0, 60, 'Naa nakay pang register para sa Mt. Dulang-Dulang', { fontSize: '32px', fill: '#000' });
             }else if (cash===1500){
                 spree.alpha = 0.0;
-                spree = game.add.text(150, 60, 'Pwede naka maka palit ug bibigirl', { fontSize: '32px', fill: '#000' });
+                spree = game.add.text(0, 60, 'Pwede naka maka palit ug bibigirl', { fontSize: '32px', fill: '#000' });
             }else{
                  spree.alpha = 0.0;
             }
