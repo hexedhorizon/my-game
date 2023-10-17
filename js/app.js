@@ -90,7 +90,9 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         }
 
         //  The score
-        cashText = game.add.text(-15,0 , 'Cash: 0', { margin: 'auto', fontSize: '32px', fill: '#000' });
+        cashText = game.add.text(50,450 , 'CASH: 0', { margin: 'auto',
+                                                       fontSize: '32px', 
+                                                       fill: '#ff0000' });
 
         //  Our controls.
         cursors = game.input.keyboard.createCursorKeys();
@@ -150,7 +152,7 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         //  Add and update the score
         cash += 10;
         count+=1;
-        cashText.text = 'Cash: ' + cash;
+        cashText.text = 'CASH: ' + cash;
         
         if(count===10){
             //spree text
