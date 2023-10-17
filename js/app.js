@@ -89,10 +89,10 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
             star.body.bounce.y = 0.7 + Math.random() * 0.5;
         }
 
-        //  The score
+        //  The scoregit
         cashText = game.add.text(50,450 , 'CASH: 0', { margin: 'auto',
                                                        fontSize: '32px', 
-                                                       fill: '#ff0000' });
+                                                       fill: '#5A5A5A' });
 
         //  Our controls.
         cursors = game.input.keyboard.createCursorKeys();
