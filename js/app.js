@@ -4,8 +4,7 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         game.load.image('sky', 'assets/day background.png');
         game.load.image('ground', 'assets/platform.png');
         game.load.image('star', 'assets/cashen.png');
-       // game.load.spritesheet('dude', 'assets/scottHD.png', 52.5, 65.25);
-       game.load.spritesheet('dude', 'assets/dir.png', 52.5, 65.25);
+        game.load.spritesheet('dude', 'assets/dir.png', 52.5, 65.25);
         game.load.spritesheet('ramona', 'assets/ramona.png', 52.5, 65.25);
     }
 
@@ -45,22 +44,15 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         ground.body.immovable = true;
 
         //  Now let's create two ledges
-       /* var ledge = platforms.create(600, 350, 'ground');
+       var ledge = platforms.create(600, 350, 'ground');
         ledge.body.immovable = true;
 
         ledge = platforms.create(-190, 350, 'ground');
-        ledge.body.immovable = true;*/
+        ledge.body.immovable = true;
 
         // The player and its settings
        
-        /*
-        
-            ramona = game.add.sprite(5, game.world.height - 135, 'ramona');
-           // ramona = platforms.create(5, game.world.height - 135, 'ramona');
-            ramona.scale.set(1.89);
-           // ramona.body.immovable = true;
-            ramona.animations.add('ramonaStay', [0,1,2,3,4,5], 5, true);
-            ramona.animations.play('ramonaStay');*/
+       
 
             player = game.add.sprite(500, game.world.height - 145, 'dude');
             player.scale.set(1.89);
@@ -72,21 +64,9 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
             player.body.gravity.y = 500;
             player.body.collideWorldBounds = true;
 
-            //  Our two animations, walking left and right.
-           // player.animations.add('left', [0, 1, 2, 3], 10, true);
-           // player.animations.add('right', [5, 6, 7, 8], 10, true);
-
-           //scott pilgrim
-           /*
-            player.animations.add('right', [16, 17, 18, 19,20,21,22,23], 10, true);
-            player.animations.add('left', [24,25,26,27,28,29,30,31], 10, true);
-            player.animations.add('stayLeft', [0,1,2,3,4,5,6,7], 10, true);
-            player.animations.add('stayRight', [8,9,10,11,12,13,14,15], 10, true);*/
-
-         //  player.animations.add('right', [16, 17, 18, 19,20,21], 10, true);
-          //  player.animations.add('left', [24,25,26,27,28,29], 10, true);
-             player.animations.add('right', [3, 4,5, 6,7,8], 10, true);
-             player.animations.add('left', [9,10,11,12,13,14], 10, true);
+         
+            player.animations.add('right', [3, 4,5, 6,7,8], 10, true);
+            player.animations.add('left', [9,10,11,12,13,14], 10, true);
             player.animations.add('stayRight', [0,1,2], 5, true);
 
 
