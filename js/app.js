@@ -108,7 +108,7 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         game.physics.arcade.overlap(player, stars, collectStar, null, this);
 
         //  Reset the players velocity (movement)
-        player.body.velocity.x = 15;
+        player.body.velocity.x = 0;
 
         if (cursors.left.isDown)
         {
@@ -137,7 +137,7 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         //  Allow the player to jump if they are touching the ground.
         if (cursors.up.isDown && player.body.touching.down && hitPlatform)
         {
-            player.body.velocity.y = -750;
+            player.body.velocity.y = -400;
         }
 
     }
