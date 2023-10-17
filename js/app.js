@@ -35,7 +35,7 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         platforms.enableBody = true;
 
         // Here we create the ground.
-        var ground = platforms.create(0, game.world.height - 18, 'ground');
+        var ground = platforms.create(0, game.world.height - 10, 'ground');
 
         //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
         ground.scale.setTo(2, 2);
@@ -44,10 +44,10 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
         ground.body.immovable = true;
 
         //  Now let's create two ledges
-       var ledge = platforms.create(600, 350, 'ground');
+       var ledge = platforms.create(600, 300, 'ground');
         ledge.body.immovable = true;
 
-        ledge = platforms.create(-190, 350, 'ground');
+        ledge = platforms.create(-190, 300, 'ground');
         ledge.body.immovable = true;
 
         // The player and its settings
