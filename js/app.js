@@ -47,13 +47,11 @@ var game = new Phaser.Game(800, 500, Phaser.AUTO, '', { preload: preload, create
        var ledge = platforms.create(600, 300, 'ground');
         ledge.body.immovable = true;
 
-        ledge = platforms.create(-190, 300, 'ground');
+        ledge = platforms.create(-190, 250, 'ground');
         ledge.body.immovable = true;
 
         // The player and its settings
        
-       
-
             player = game.add.sprite(500, game.world.height - 145, 'dude');
             player.scale.set(1.89);
             //  We need to enable physics on the player
